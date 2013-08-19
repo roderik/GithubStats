@@ -1,0 +1,22 @@
+{
+    "name": "roderik/githubstats",
+    "require": {
+        "cilex/cilex": "1.0.*@dev",
+        "umpirsky/oregon": "0.1.*@dev",
+        "knplabs/packagist-api": "0.1.*@dev",
+        "knplabs/github-api": "1.2.*@dev",
+        "athari/yalinqo": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roderik van der Veer",
+            "email": "roderik@vanderveer.be"
+        }
+    ],
+    "autoload":{
+        "psr-0":{
+            "GithubStats": "src/"
+        }
+    }
+}

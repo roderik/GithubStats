@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+require_once __DIR__ . '/vendor/autoload.php';
+
+$app = new \Cilex\Application('GithubStats', 1.0);
+
+$output = new Symfony\Component\Console\Output\ConsoleOutput();
+
+$app->command(new \GithubStats\Command\StatsCommand($output));
+
+$app->run();
