@@ -73,7 +73,7 @@ class StatsCommand extends Command {
         $contributors = $oregon->getContributors();
         $repositories = $githubClient->api('organization')->repositories($organisation);
 
-        $downloads = $this->oregon->getDownloads();
+        $downloads = $oregon->getDownloads();
 
         $statistics = array(
             'contributions'    => Enumerable::from($contributors)->sum('$v["contributions"]'),

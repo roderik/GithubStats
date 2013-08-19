@@ -31,7 +31,12 @@ or an example:
 ```
 $ ./ghs compile Kunstmaan
 
-
+Contributions:     5075
+Contributors:      23
+Forks:             68
+Watchers:          451
+Downloads total:   73523
+Downloads monthly: 8689
 
 ```
 
@@ -41,6 +46,6 @@ $ ./ghs compile Kunstmaan
 
 API limit exeeded, just wait...
 ```
-  [Github\Exception\ApiLimitExceedException]                 
-  You have reached GitHub hour limit! Actual limit is: 5000  
+  [Github\Exception\ApiLimitExceedException]
+  You have reached GitHub hour limit! Actual limit is: 5000
 ```
