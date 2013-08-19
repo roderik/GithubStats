@@ -3,6 +3,14 @@ GithubStats
 
 A Cilex command that used the Oregon project to compile statistics for a Github/Packagist organisation
 
+## Installation
+
+```
+git clone https://github.com/roderik/GithubStats.git
+cd GithubStats
+composer install
+```
+
 ## Usage
 
 ```
