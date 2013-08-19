@@ -2,6 +2,7 @@
 namespace GithubStats\Command;
 
 use Cilex\Command\Command;
+use Github\HttpClient\CachedHttpClient;
 use Oregon\Oregon;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -11,7 +12,7 @@ use Packagist\Api\Client as PackagistApi;
 use YaLinqo\Enumerable;
 
 /**
- * Class StatsCommand<
+ * Class StatsCommand
  * @package GithubStats\Command
  */
 class StatsCommand extends Command {
@@ -64,7 +65,8 @@ class StatsCommand extends Command {
      */
     private function getStatistics($organisation)
     {
-        $githubClient = new GithubAPI();
+        $httpClient = new CachedHttpClient();
+        $githubClient = new GithubAPI($httpClient);
         $packagistClient = new PackagistApi();
         $oregon = new Oregon($organisation, $githubClient, $packagistClient);
 
