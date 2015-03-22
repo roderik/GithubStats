@@ -3,10 +3,16 @@
     "require": {
         "cilex/cilex": "1.0.*@dev",
         "umpirsky/oregon": "0.1.*@dev",
-        "knplabs/packagist-api": "0.1.*@dev",
-        "knplabs/github-api": "1.2.*@dev",
+        "knplabs/packagist-api": "~1.0",
+        "knplabs/github-api": "~1.4",
         "athari/yalinqo": "dev-master"
     },
+     "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/roderik/Oregon.git"
+        }
+    ],
     "license": "MIT",
     "authors": [
         {
