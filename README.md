@@ -1,4 +1,4 @@
-GithubStats
+GithubStatistics
 ===========
 
 A Cilex command that used the Oregon project to compile statistics for a Github/Packagist organisation
